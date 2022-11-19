@@ -1,5 +1,18 @@
+:root {
+	--bg-dark: #2d283c;
+	--bg-light: #ddd;
+	--text-dark: #1d1e2c;
+	--text-light: #ddd;
+}
+
+* {
+	padding: 0;
+}
+
+
 body {
-  background: #ddd;
+  background: var(--bg-dark);
+  color: var(--text-light);
   margin: 1rem;
   padding: 1rem;
   max-width: 500px;
@@ -25,7 +38,7 @@ a {
 }
 
 a:visited {
-	color: crimson;
+	color: #9620be;
 }
 
 
@@ -39,4 +52,64 @@ input {
 
 img {
 	max-width: 300px;
+}
+
+button {
+	color: #e59b5a;
+	padding: .7rem;
+	margin: .3rem;
+	border-radius: 5px;
+	border: 1px solid #e59b5a;
+	background: transparent;
+	
+	
+}
+
+button:hover {
+	color: white;
+	background: #d79052;
+	transition: all .3s ease-in-out;
+}
+
+.profile-card {
+	display: grid;
+	grid-template-columns: auto;
+	gap: .5rem;
+	justify-items: center;
+	
+}
+
+.profile-card p {
+	color: #9ba1ae;
+}
+
+.profile-img {
+	border-radius: 50%;
+}
+
+.skills-container {
+	display: flex; 
+	align-items:center;
+	gap: .5rem;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-evenly;
+	justify-self: stretch;
+	gap: .5rem;
+}
+
+.skills li {
+	font-size: .9rem;
+	color: var(--text-light);
+	background: #1d1e2c;
+	list-style: none;
+	border-radius: 5px;
+	padding: .4rem;
+	
+}
+
+.skills li:hover {
+	color: #d79052;
 }
