@@ -12,3 +12,7 @@ function handleSubmit(evt) {
 let form = document.querySelector('#contact');
 
 form.addEventListener('submit', handleSubmit);
+
+document.getElementById('ninja-cat').addEventListener('mouseover', () => {
+	alert('You rock!!')
+})

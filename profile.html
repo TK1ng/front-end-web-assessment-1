@@ -1,6 +1,56 @@
-Not implemented yet! 
+<!DOCTYPE html>
+<html lang="en">
 
-<br>
-<br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
+</head>
 
-<a href="./home.html"><< Back </a>
+<body>
+    <nav>
+        <ol>
+            <li class="crumb"><a href="./home.html">Home</a></li>
+            <li class="crumb"><a href="./profile.html">Profile</a></li>
+            <li class="crumb"><a href="./about.html">About</a></li>
+        </ol>
+    </nav>
+    <main>
+        <div class="profile-card">
+            <img width="300" class="profile-img" src="CrownLogo--dkbg.svg" alt="profile image of Taryn">
+            <h1>Taryn King</h1>
+            <p class="tagline">tagline/goal/object here</p>
+            <div class="skills-container">
+                <h3>Skills: </h3>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                </ul>
+            </div>
+
+            <h3>Interests: </h3>
+            <p class="interests">I enjoy creating the front end of websites and crafting clever tools and experiences
+                with code. When not infront of the computer, you can find me watching Ancient Aliens, playing guitar, or
+                practicing yoga 🧘🏾‍♂️</p>
+            <div>
+                <button id="color">Favorite Color</button>
+                <button id="place">Favorite Place</button>
+                <button id="ritual">Favorite Ritual</button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <a href="./home.html">
+            << Back </a>
+    </main>
+    <script src="profile.js"></script>
+</body>
+
+</html>
