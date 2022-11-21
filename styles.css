@@ -27,8 +27,20 @@ nav {
 	border-bottom: 2px solid var(--secondary);
 }
 
+p {
+	color: #9ba1ae;
+}
+
 ol {
 	padding-left: 0;
+}
+
+li {
+	list-style: none;
+}
+
+li:hover {
+	color: var(--secondary);
 }
 
 content ul {
@@ -40,17 +52,18 @@ content ul {
 	display: inline;
 }
 
-a {
-	color: var(--text-light);
-	text-decoration: none;
+a:visited {
+	color: #9620be;
 }
+
 
 a:hover {
 	color: var(--secondary);
 }
 
-a:visited {
-	color: #9620be;
+a {
+	color: var(--text-light);
+	text-decoration: none;
 }
 
 
@@ -129,7 +142,6 @@ button:hover {
 	font-size: .9rem;
 	color: var(--text-light);
 	background: #1d1e2c;
-	list-style: none;
 	border-radius: 5px;
 	padding: .4rem;
 	transition: var(--transition);
@@ -137,7 +149,11 @@ button:hover {
 }
 
 .skills li:hover {
-	color: var(--secondary);
 	transform: scale(1.2);
+}
 
+/* Neighborhood page styles */
+
+#recommendation {
+	
 }
